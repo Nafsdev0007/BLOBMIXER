@@ -1,0 +1,51 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: aften;
+  src: url(../public/aften_screen.woff);
+}
+body{
+  height: 100%;
+  width: 100%;
+  font-family: aften;
+}
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav{
+  padding: 2vw 2vw;
+}
+
+.text-line{
+  cursor: pointer;
+  position: relative;
+}
+.text-line::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+.text-line:hover::after{
+  width: 100%;
+}
+.mid{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.glass-svg:hover{
+  fill: #ffffff;
+}
+
+.mid:hover  .glass-svg{
+  fill: #ffffff;
+}

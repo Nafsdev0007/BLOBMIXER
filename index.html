@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen relative">
+      <nav class="absolute text-[18px]  text-[#ffffff] z-[10] top-0 flex justify-between left-0 w-full">
+        <h2 class="cursor-default">Blobmixer</h2>
+        <div class="flex mid gap-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center">
+          <h2 class="text-line">Try in VR</h2>
+          <svg class="glass-svg" width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="VRButton_hmd__P7+Il" d="M25.9057 2.63583L25.9056 2.63582V2.64802V9.91164C25.9056 11.0668 25.0463 11.9366 24.1227 11.9366H18.5294H18.4948C17.7701 11.9366 17.1 11.5083 16.7255 10.7894C16.7253 10.7889 16.725 10.7883 16.7247 10.7878L15.8971 9.16711C15.3047 7.9859 13.6882 7.92735 13.0411 9.11756L12.1776 10.6719C11.7374 11.4643 10.9615 11.9366 10.1589 11.9366H4.87685C3.95326 11.9366 3.09399 11.0668 3.09399 9.91164V2.64802C3.09399 1.48769 3.92332 0.623047 4.87685 0.623047H24.1573C25.0862 0.623047 25.9344 1.46183 25.9057 2.63583Z" stroke="white"></path><path d="M27.5471 2.61353V7.90559L28.9998 7.5943V2.95941L27.5471 2.61353Z" fill="white"></path><path d="M0 7.55967L1.45272 7.87096V2.64807L0 2.95937V7.55967Z" fill="white"></path></svg>
+        </div>
+        <h2 class="text-line">About</h2>
+      </nav>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
